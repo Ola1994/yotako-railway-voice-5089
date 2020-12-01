@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My first website</title>
+  </head>
+  <body>
+    <h1>My website</h1>
+    <h2 id="heading">Welcome to my portfolio</h2>
+    <h3>@ Andreas Biørn-Hansen</h3>
+    <input id="sentenceInput" placeholder="Insert color!" />
+    <button id="changeTagButton">Set color</button>
+
+    <script>
+      // This piece of code should help us gather input from the user!
+      let headingElement = document.getElementById("heading");
+      let sentenceInputElement = document.getElementById("sentenceInput");
+      let changeTagButtonElement = document.getElementById("changeTagButton");
+      changeTagButtonElement.addEventListener("click", function () {
+        //headingElement.innerText = sentenceInputElement.value;
+        document.body.style.backgroundColor = sentenceInputElement.value;
+      });
+    </script>
+  </body>
+</html>
